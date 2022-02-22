@@ -27,7 +27,10 @@ namespace EmployeePayrollServiceADO.NET
             //repository.EmployeesFromForDateRange("2022-01-15");
 
             //UC6
-            repository.FindGroupedByGenderRecord("M");
+            //repository.FindGroupedByGenderRecord("M");
+
+            //UC7
+            repository.InsertIntoMultipleTablesWithTransactions();
 
             Console.WriteLine();
         }
