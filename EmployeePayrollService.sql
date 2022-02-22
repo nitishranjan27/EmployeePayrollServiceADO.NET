@@ -1,4 +1,4 @@
-﻿
+﻿-- UC1
 Create database Payroll_Services;
 
 exec sp_databases;   --Show all existing databases in short
@@ -27,8 +27,11 @@ Select * from employee_payroll1;
 --insert Values into the table
 insert into employee_payroll1(EmployeeName,PhoneNumber,Address,Department,Gender,BasicPay,Deductions,TaxablePay,Tax,NetPay,StartDate,City,Country) values
 ('Terisa','8788616249','Jaunpur','HR','F','300000','20000','10000','20000','180000','2021-05-20','Jaunpur','INDIA');
-select * from employee_payroll1;  ---Display table
+select * from employee_payroll;  ---Display table
+--Delete from employee_payroll where EmployeeID = 3;  -- To delete any particular row.
 
+
+-- UC2
 --CREATE PROCEDURE precedureName    -- How to create a procedure
 --AS
 --SELECT * FROM table_name   
@@ -66,3 +69,7 @@ Begin
 	Insert into employee_payroll1 values(@EmployeeName,@PhoneNumber,@Address,@Department,@Gender,@BasicPay,@Deductions,@TaxablePay,@Tax,
 	@NetPay,@StartDate,@City,@Country)
 End
+
+
+-- UC3
+Select * from employee_payroll1;
