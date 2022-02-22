@@ -57,6 +57,7 @@ namespace EmpPayrollServiceTestADO.NET
             //Assert
             Assert.AreEqual(BasicPay, expectedPay);
         }
+
         /* TC6:- Ability to find sum, average, min, max and number of male and female employees
                  - Use Database Function SUM, AVG, MIN, MAX, COUNT to do analysis by Male and Female.
                  - Note: You will need to use GROUP BY GENDER grouping to get the result
@@ -72,5 +73,6 @@ namespace EmpPayrollServiceTestADO.NET
 
             Assert.AreEqual(expected, actual);  //Assert
         }
+
     }
 }
